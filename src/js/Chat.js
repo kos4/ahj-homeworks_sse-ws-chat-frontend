@@ -53,7 +53,7 @@ export default class Chat {
   }
 
   subscribeOnEvents() {
-    this.websocket = new WebSocket('ws://ahj-homeworks-sse-ws-chat-backend-7gs4.onrender.com/');
+    this.websocket = new WebSocket('wss://ahj-homeworks-sse-ws-chat-backend-7gs4.onrender.com/');
 
     this.websocket.addEventListener('open', () => {
       this.renderChat();
